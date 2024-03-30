@@ -132,7 +132,6 @@ extension TerminalView {
             
             terminalDelegate?.sizeChanged (source: self, newCols: newCols, newRows: newRows)
            
-            updateScroller()
             return true
         }
         return false
@@ -1034,7 +1033,6 @@ extension TerminalView {
             updateDisplay (notifyAccessibility: notifyAccessibility)
             //selectionView.notifyScrolled(source: terminal)
             terminalDelegate?.scrolled (source: self, position: scrollPosition)
-            updateScroller()
             setNeedsDisplay(frame)
         }
     }
