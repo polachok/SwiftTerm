@@ -161,7 +161,7 @@ open class TerminalView: NSView, NSTextInputClient, NSUserInterfaceValidations, 
         if isBigSur {
             disableFullRedrawOnAnyChanges = true
         }
-        setupScroller()
+        //setupScroller()
         setupOptions()
         setupFocusNotification()
     }
